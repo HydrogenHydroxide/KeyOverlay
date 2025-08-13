@@ -1,13 +1,13 @@
-package com.KeyOverlay;
+package com.keyoverlay;
 
 import net.runelite.client.RuneLite;
 import net.runelite.client.externalplugins.ExternalPluginManager;
 
-public class KeyOverlayTest
+public class keyoverlaytest
 {
     public static void main(String[] args) throws Exception
     {
-        ExternalPluginManager.loadBuiltin(com.KeyOverlay.KeyOverlayPlugin.class);
+        ExternalPluginManager.loadBuiltin(keyoverlayplugin.class);
         RuneLite.main(args);
     }
 }

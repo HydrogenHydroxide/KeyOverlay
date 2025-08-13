@@ -3,7 +3,7 @@
 // (powered by FernFlower decompiler)
 //
 
-package com.KeyOverlay;
+package com.keyoverlay;
 
 import java.awt.Color;
 import net.runelite.client.config.Config;
@@ -12,7 +12,7 @@ import net.runelite.client.config.ConfigItem;
 import net.runelite.client.config.Range;
 
 @ConfigGroup("keyoverlay")
-public interface KeyOverlayConfig extends Config {
+public interface keyoverlayconfig extends Config {
     @ConfigItem(
             keyName = "highlightColor",
             name = "Highlight Color",

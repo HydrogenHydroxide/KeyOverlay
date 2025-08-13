@@ -1,4 +1,4 @@
-package com.KeyOverlay;
+package com.keyoverlay;
 
 import com.google.inject.Provides;
 import javax.inject.Inject;
@@ -24,21 +24,21 @@ import java.util.Locale;
         description = "Displays configurable keys horizontally, last key pressed is highlighted",
         tags = {"keys", "overlay"}
 )
-public class KeyOverlayPlugin extends Plugin implements KeyListener
+public class keyoverlayplugin extends Plugin implements KeyListener
 {
     @Inject private OverlayManager overlayManager;
     @Inject private KeyManager keyManager;
-    @Inject private KeyOverlayOverlay overlay;
+    @Inject private keyoverlayoverlay overlay;
 
-    @Inject private KeyOverlayConfig config;
+    @Inject private keyoverlayconfig config;
 
     @Getter
     private String lastKeyText = "";
 
     @Provides
-    KeyOverlayConfig provideConfig(ConfigManager configManager)
+    keyoverlayconfig provideConfig(ConfigManager configManager)
     {
-        return configManager.getConfig(KeyOverlayConfig.class);
+        return configManager.getConfig(keyoverlayconfig.class);
     }
 
     @Override

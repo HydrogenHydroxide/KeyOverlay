@@ -1,4 +1,4 @@
-package com.KeyOverlay;
+package com.keyoverlay;
 
 import net.runelite.client.ui.overlay.Overlay;
 import net.runelite.client.ui.overlay.OverlayLayer;
@@ -7,16 +7,16 @@ import net.runelite.client.ui.overlay.OverlayPosition;
 import javax.inject.Inject;
 import java.awt.*;
 
-public class KeyOverlayOverlay extends Overlay
+public class keyoverlayoverlay extends Overlay
 {
-    private final KeyOverlayPlugin plugin;
-    private final KeyOverlayConfig config;
+    private final keyoverlayplugin plugin;
+    private final keyoverlayconfig config;
 
     private static final int SHADOW_OFFSET = 2;
     private static final Color SHADOW_COLOR = new Color(0, 0, 0, 150);
 
     @Inject
-    public KeyOverlayOverlay(KeyOverlayPlugin plugin, KeyOverlayConfig config)
+    public keyoverlayoverlay(keyoverlayplugin plugin, keyoverlayconfig config)
     {
         this.plugin = plugin;
         this.config = config;
@@ -65,7 +65,7 @@ public class KeyOverlayOverlay extends Overlay
         return new Dimension(config.spacing() * keys.length + 20, y + config.fontSize());
     }
 
-    public KeyOverlayConfig getConfig()
+    public keyoverlayconfig getConfig()
     {
         return config;
     }
